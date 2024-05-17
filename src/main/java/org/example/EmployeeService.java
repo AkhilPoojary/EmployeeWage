@@ -8,6 +8,8 @@ public interface EmployeeService {
 
     public void switchCase();
 
+    public int monthWage();
+
 
 
 }

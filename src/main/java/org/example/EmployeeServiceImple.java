@@ -63,4 +63,27 @@ public class EmployeeServiceImple implements EmployeeService {
                 break;
         }
     }
+
+    @Override
+    public int monthWage() {
+        if (isEmployeeAvailabale()) {
+            int wagePerHour = 20;
+            Scanner sc = new Scanner(System.in);
+            System.out.println("employee is part time or full time employee");
+            int choice = sc.nextInt();
+            if (choice == 1) {
+                System.out.println("employee is full time worker");
+                System.out.println("daily employee wage is " + 20 * 8);
+                System.out.println("monthly employee wage is " + 20 * 8 * 20);
+                return 20 * 8 * 20;
+            } else if (choice == 2) {
+                System.out.println("employee is part time worker");
+                System.out.println("daily employee wage is " + 20 * 4 *20);
+                return 20 * 4 * 20;
+            }
+        } else {
+            System.out.println("employee is absent ");
+        }
+        return 0;
+    }
 }

@@ -29,5 +29,9 @@ public class Main {
 
         e.checkWagePerDay();
 
+        e.switchCase();
+
+        e.monthWage();
+
     }
 }
