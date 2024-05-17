@@ -18,12 +18,16 @@ public class Main {
         String phone=sc.next();
 
         EmployeeService e=new EmployeeServiceImple();
-        boolean attedence = e.isEmployeeAvailabale();
+        boolean isEmployeePresent = e.isEmployeeAvailabale();
 
-        System.out.println(ename+"attedence "+attedence);
+        System.out.println(ename+"attedence "+isEmployeePresent);
 
-        Employee e1=new Employee(ename,phone,department,attedence);
+        Employee e1=new Employee(ename,phone,department,isEmployeePresent);
 
         System.out.println(e1);
+
+
+        e.checkWagePerDay();
+
     }
 }

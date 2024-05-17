@@ -4,5 +4,8 @@ public interface EmployeeService {
 
     public boolean isEmployeeAvailabale();
 
+    public int checkWagePerDay();
+
+
 
 }
