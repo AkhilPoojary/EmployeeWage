@@ -6,6 +6,8 @@ public interface EmployeeService {
 
     public int checkWagePerDay();
 
+    public void switchCase();
+
 
 
 }
